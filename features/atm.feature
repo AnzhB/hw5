@@ -1,7 +1,7 @@
 Feature: ATM withdraw
-  As an Account Holder
-  In Order to get money
-  I want to withdraw cash from an ATM
+   As an Account Holder
+   In Order to get money
+   I want to withdraw cash from an ATM
 
   Scenario: Account has sufficient funds
     Given my account balance is "500"
@@ -20,3 +20,4 @@ Feature: ATM withdraw
     And the ATM contains "150"
     When I withdraw "300"
     Then I get "The machine is not have enough money!" message
+    
