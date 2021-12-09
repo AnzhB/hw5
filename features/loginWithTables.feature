@@ -4,7 +4,6 @@ Scenario: Failed login for all invalid users' credentials
   When I go to "https://viktor-silakov.github.io/course-sut/index.html?quick" 
   When I log in as :
 
-
       | login             | password      |
       | walker@jw.com'    | password1     |
       | walker@jw.com'    |               |
