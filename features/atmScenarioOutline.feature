@@ -3,7 +3,7 @@ Feature: ATM withdraw
    In Order to get money
    I want to withdraw cash from an ATM
 
- Scenario Outline: ATM withdraw leads to right message <messageText>
+Scenario Outline: ATM withdraw leads to right message <messageText>
     Given my account balance is "<accBalance>"
     And the ATM contains "<moneyAviabilityATM>"
     When I withdraw "<withdrawCash>"
