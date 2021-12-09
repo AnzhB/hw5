@@ -33,6 +33,19 @@ When(/^I fill form:$/, function (formYaml) {
     // add implementation here
 });
 
-When('I login as: {string}, {string}', function (login, password) {
-    // add implementation here
+When(/^I log in as :$/, async function (table) {
+    const rows = table.hashes()
+    for (const row of rows) {
+        await $('#login').setValue(row.login);
+        await $('#password').setValue(row.password);
+    }
+});
+
+When ('I click Login button', async function() {
+    await $('button').click();
+});
+
+Then('I expect error message Fail to login', async function () {
+    expect(await $('#error').getText())
+        .toEqual("Fail to login")
 });
