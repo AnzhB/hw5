@@ -13,4 +13,4 @@ Examples:
       | accBalance | moneyAviabilityATM| withdrawCash | messageText                          |
       | 500        | 600               | 50           | Take your money!                     |
       | 500        | 600               | 550          | You don't have enough money!         |
-      | 500        | 150               | 300           | The machine is not have enough money!|
+      | 500        | 150               | 300          | The machine is not have enough money!|
